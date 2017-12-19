@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.akash.intandextstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/etLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Enter text you want to store"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textColorHint="#0000ff" />
+
+    <Button
+        android:id="@+id/btnGetInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSaveInt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Get from Internal Storage" />
+
+    <Button
+        android:id="@+id/btnSaveExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetInt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Save to External Storage" />
+
+    <Button
+        android:id="@+id/btnGetExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSaveExt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Get from External Storage" />
+
+    <Button
+        android:id="@+id/btnSaveInt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSaveExt"
+        android:layout_alignStart="@+id/btnSaveExt"
+        android:layout_below="@+id/etLine"
+        android:layout_marginTop="20dp"
+        android:text="Save to Internal Storage" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetExt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Text will be Displayed here" />
+
+
+</RelativeLayout>
